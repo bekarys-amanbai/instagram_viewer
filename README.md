@@ -1,5 +1,19 @@
 # instagram_viewer
+```python
+from instagram_viewer import InstagramViewer
 
+insta = InstagramViewer('https://www.instagram.com/instagram/')
+posts = insta.last_12_posts
+
+print('full_name:', insta.full_name)
+print('username:', insta.username)
+print('biography:', insta.biography)
+print('id:', insta.id)
+print('avatar:', insta.avatar)
+print('count_posts:', insta.count_posts)
+
+
+```
 
 ### атрибуты
 - full_name
