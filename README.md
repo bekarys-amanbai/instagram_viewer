@@ -2,8 +2,8 @@
 ```python
 from instagram_viewer import InstagramViewer
 
+
 insta = InstagramViewer('https://www.instagram.com/instagram/')
-posts = insta.last_12_posts
 
 print('full_name:', insta.full_name)
 print('username:', insta.username)
@@ -12,7 +12,13 @@ print('id:', insta.id)
 print('avatar:', insta.avatar)
 print('count_posts:', insta.count_posts)
 
+for post in insta.last_12_posts:
+    print(post.post_url)
+    print(post.description)
 
+for post in insta.get_next_posts():
+    print(post.post_url)
+    print(post.description)
 ```
 
 ### атрибуты
